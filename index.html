@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Home Page</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+		<div class="d-flex justify-content-between">
+		   <img class="logo" alt="logo" src="assets/images/logo.svg">
+		   <div class="d-flex border my-3 p-0 col-xl-6 col-lg-6 search-top-header">
+            <button class="border-0 deliver-btn">
+				<i class="fas fa-map-marker-alt"></i>
+				Deliver to
+			</button>
+			<div class="input-group">
+				<input type="text" class="form-control border-0 h-100" 
+				   placeholder="Search for medication & Wellness products.." 
+				   aria-label="Search" aria-describedby="search-icon">
+				<div class="input-group-append">
+					<span class="bg-white border-0"><i class="fas fa-search p-3"></i></span>
+				</div>
+			</div>
+		    </div>
+
+        <div  class="py-4 cart-box">
+		  <i class="fas fa-shopping-cart"></i>
+		</div>  
+
+		<div class="py-4 user-box">
+			<span class="user-icon-top text-white rounded-circle">
+			<i class="fas fa-user"></i> 
+		    </span>
+			SIGN IN / SIGN UP  
+		</div>
+
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="navbarToggleExternalContent" aria-labelledby="navbarToggleExternalContentLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="navbarToggleExternalContentLabel"></h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body p-4">
+				<ul class="navbar-nav">
+					<li class="nav-item mx-2">
+						<a class="nav-link fw-bold" href="#">Home</a>
+					</li>
+					<li class="nav-item mx-2 dropdown">
+						<a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Products
+						</a>
+						<div class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
+							<!-- Dropdown items go here -->
+							<a class="dropdown-item fw-bold" href="#">Dhoop Cones</a>
+							<a class="dropdown-item fw-bold" href="#">Incense Holders</a>
+							<a class="dropdown-item fw-bold" href="#">Yantras</a>
+                            <a class="dropdown-item fw-bold" href="#">Incense Sticks</a>
+                            <a class="dropdown-item fw-bold" href="#">Pooja Thali Sets</a>
+                            <a class="dropdown-item fw-bold" href="#">Shankh</a>
+                            <a class="dropdown-item fw-bold" href="#">Kalash</a>
+                            <a class="dropdown-item fw-bold" href="#">Book Rests</a>
+						</div>
+					</li>
+					<li class="nav-item mx-2 dropdown">
+						<a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Services
+						</a>
+						<div class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
+							<!-- Dropdown items go here -->
+							<a class="dropdown-item fw-bold" href="#">Services 1</a>
+							<a class="dropdown-item fw-bold" href="#">Services 2</a>
+							<a class="dropdown-item fw-bold" href="#">Services 3</a>
+						</div>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link fw-bold" href="#">Courses</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link fw-bold" href="#">Blogs</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link fw-bold" href="#">Videos</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link fw-bold" href="#">Contact Us</a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+
+		<nav class="navbar navbar-light mobile-navbar py-3">
+			<div class="container-fluid">
+				<!-- Toggle Button -->
+				<button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</nav>   
+	    </div>
+		</div>
+        <hr class="my-2">
+		<nav class="navbar navbar-expand-lg navbar-desktop">
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item mx-2">
+						<a class="nav-link fw-bold" href="#">Home</a>
+					</li>
+					<li class="nav-item mx-2 dropdown">
+						<a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Products
+						</a>
+						<div class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
+							<!-- Dropdown items go here -->
+							<a class="dropdown-item fw-bold" href="product.html">Dhoop Cones</a>
+							<a class="dropdown-item fw-bold" href="#">Incense Holders</a>
+							<a class="dropdown-item fw-bold" href="#">Yantras</a>
+                            <a class="dropdown-item fw-bold" href="#">Incense Sticks</a>
+                            <a class="dropdown-item fw-bold" href="#">Pooja Thali Sets</a>
+                            <a class="dropdown-item fw-bold" href="#">Shankh</a>
+                            <a class="dropdown-item fw-bold" href="#">Kalash</a>
+                            <a class="dropdown-item fw-bold" href="#">Book Rests</a>
+						</div>
+					</li>
+					<li class="nav-item mx-2 dropdown">
+						<a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Services
+						</a>
+						<div class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
+							<!-- Dropdown items go here -->
+							<a class="dropdown-item fw-bold" href="#">Services 1</a>
+							<a class="dropdown-item fw-bold" href="#">Services 2</a>
+							<a class="dropdown-item fw-bold" href="#">Services 3</a>
+						</div>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link fw-bold" href="#">Courses</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link fw-bold" href="#">Blogs</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link fw-bold" href="#">Videos</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link fw-bold" href="#">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	  </div>
+   </header>
+    <!-- page content goes here -->
+	
+<!-- Carousel -->
+<div class="hero-slider py-5">
+
+	<div class="container">
+		<div class="row">
+			<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+				<!-- Indicators/dots -->
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+					<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+				</div>
+
+				<!-- The slideshow/carousel -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="assets/images/frame.svg" alt="Image" class="d-block w-100">
+							</div>
+							<div class="col-md-8">
+								<div class="carousel-caption position-relative start-0 end-0">
+									<h1 class="hero-slider-text text-dark py-5 text-start">1. Transform Your Mind & Soul: Discover Your Spiritual Path with Our Courses</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="assets/images/frame.svg" alt="Image" class="d-block w-100">
+							</div>
+							<div class="col-md-8">
+								<div class="carousel-caption position-relative start-0 end-0">
+									<h1 class="hero-slider-text text-dark py-5 text-start">2. Transform Your Mind & Soul: Discover Your Spiritual Path with Our Courses</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="assets/images/frame.svg" alt="Image" class="d-block w-100">
+							</div>
+							<div class="col-md-8">
+								<div class="carousel-caption position-relative start-0 end-0">
+									<h1 class="hero-slider-text text-dark py-5 text-start">3. Transform Your Mind & Soul: Discover Your Spiritual Path with Our Courses</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+		<span class="arrow-sign bg-white rounded-circle">
+		<i class="fas fa-arrow-left"></i>
+	    </span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+		<span class="arrow-sign bg-white rounded-circle">
+		<i class="fas fa-arrow-right"></i>
+	   </span>
+	</button>
+</div>
+
+<!--****************************************First section-end*********************************************-->
+
+<section class="categories-section">
+
+	<div class="container">
+				<h4 class="py-3 fw-bold">Shop From Our Top Categories</h4>
+				<div class="product-carousel">
+					<div class="col-xl-2 col-lg-2 image-categories-part">
+						<img src="assets/images/candle-with-beans-corn-lentils.jpg" alt="Product 1"
+						   height="180px"
+						   width="160px"
+						>
+						<div class="text-center py-3">
+						<h6 class="fw-bold">Cone Dhoop</h6>
+						<a href="#">Shop Now</a>
+					    </div>
+					</div>
+					<div class="col-xl-2 col-lg-2 image-categories-part">
+						<img src="assets/images/view-buddha-statuette.jpg" alt="Product 2"
+						height="180px"
+						width="160px"
+						>
+						<div class="text-center py-3">
+							<h6 class="fw-bold">Incense Holders</h6>
+							<a href="#">Shop Now</a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 image-categories-part">
+						<img src="assets/images/other-snackstable.jpg" alt="Product 3"
+						height="180px"
+						width="160px"
+						>
+						<div class="text-center py-3">
+							<h6 class="fw-bold">Insence Sticks</h6>
+							<a href="#">Shop Now</a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 image-categories-part">
+						<img src="assets/images/other-snackstable.jpg" alt="Product 4"
+						height="180px"
+						width="160px"
+						>
+						<div class="text-center py-3">
+							<h6 class="fw-bold">Shank</h6>
+							<a href="#">Shop Now</a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 image-categories-part">
+						<img src="assets/images/decorated-buoyant.jpg" alt="Product 5"
+						height="180px"
+						width="160px"
+						>
+						<div class="text-center py-3">
+							<h6 class="fw-bold">Kalash</h6>
+							<a href="#">Shop Now</a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 image-categories-part">
+						<img src="assets/images/view-buddha-statuette.jpg" alt="Product 6"
+						height="180px"
+						width="160px"
+						>
+						<div class="text-center py-3">
+							<h6 class="fw-bold">Budda Statue</h6>
+							<a href="#">Shop Now</a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 image-categories-part">
+						<img src="assets/images/other-snackstable.jpg" alt="Product 7"
+						height="180px"
+						width="160px"
+						>
+						<div class="text-center py-3">
+						<h6 class="fw-bold">Cone Dhoop</h6>
+						<a href="#">Shop Now</a>
+					    </div>
+					</div>
+					<div class="col-xl-2 col-lg-2 image-categories-part">
+						<img src="assets/images/candle-with-beans-corn-lentils.jpg" alt="Product 8"
+						height="180px"
+						width="160px"
+						>
+						<div class="text-center py-3">
+						<h6 class="fw-bold">Cone Dhoop</h6>
+						<a href="#">Shop Now</a>
+					    </div>
+					    </div>
+					</div>
+				</div>
+	</section>			
+		
+<!--------------------------------------second-section-end--------------------------------------------------->
+
+		<section class="why-pink-flamingo">
+
+			<div class="container">
+			<div class="row">
+			<h1 class="text-center pb-4">Why PINK FLAMINGO?</h1>
+
+			<div class="d-xl-flex d-lg-flex d-md-flex d-sm-block">
+			<div class="col-xl-5 col-xl-5 col-md-6 col-sm-12 text-end why-pink-img-box">
+				<img class="pe-4" src="assets/images/list-flamingo.svg" alt="">
+			</div>
+			<div class="col-xl-7 col-xl-7 col-md-6 col-sm-12">
+			<ul class="list-unstyled m-0 py-4">
+				<li class="why-flamingo-list">
+					<i class="fas fa-check"></i>
+					<span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+					Sed do eiusmod tempor incididunt
+				    </span>
+				</li>
+				<li class="why-flamingo-list">
+					<i class="fas fa-check"></i>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+				</li>
+				<li class="why-flamingo-list">
+					<i class="fas fa-check"></i>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+				</li>
+				<li class="why-flamingo-list">
+					<i class="fas fa-check"></i>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+				</li>
+			</ul>
+		</div>
+       </div>
+	  </div>
+    </div>
+			
+	</section>
+
+<!--***********************************************Why PINK FLAMINGO?-end******************************************-->
+
+<section class="blog-section">
+
+	<div class="container">
+		<h1 class="py-3 text-center">Our Latest Blogs</h1>
+		<div class="blog-carousel">
+			<div class="">
+				<div class="card shadow border-0 blog-cards mb-4">
+					<img class="card-img-top" src="assets/images/maditating.jpg" alt="Card image" style="width:100%">
+					<div class="card-body">
+					  <h5 class="card-title fw-bold text-center">The Power of Mindfulness</h5>
+					  <p class="card-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut 
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+					  </p>
+					  <div class="text-center py-3">
+					  <a href="#" class="btn btn-primary">Read More</a>
+					</div>
+					<div>
+						<p class="m-0">08-012-2023</p>
+					</div>
+					</div>
+				  </div>
+			</div>
+			<div class="">
+				<div class="card shadow border-0 blog-cards mb-4">
+					<img class="card-img-top" src="assets/images/praying.jpg" alt="Card image" style="width:100%">
+					<div class="card-body">
+					  <h5 class="card-title fw-bold text-center">Connecting With The Divine</h5>
+					  <p class="card-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut 
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+					  </p>
+					  <div class="text-center py-3"> 
+					  <a href="#" class="btn btn-primary">Read More</a>
+					  </div>
+					  <div>
+						<p class="m-0">08-012-2023</p>
+					</div>
+					</div>
+				  </div>
+			</div>
+			<div class="">
+				<div class="card shadow border-0 blog-cards mb-4">
+					<img class="card-img-top" src="assets/images/hand-drawn.jpg" alt="Card image" style="width:100%">
+					<div class="card-body">
+					  <h5 class="card-title fw-bold text-center">The Beauty of Forgiveness</h5>
+					  <p class="card-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut 
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+					  </p>
+					  <div class="text-center py-3"> 
+					  <a href="#" class="btn btn-primary">Read More</a>
+					  </div>
+					  <div>
+						<p class="m-0">08-012-2023</p>
+					</div>
+					</div>
+				  </div>
+			</div>
+			<div class="">
+				<div class="card shadow border-0 blog-cards mb-4">
+					<img class="card-img-top" src="assets/images/hand-drawn.jpg" alt="Card image" style="width:100%">
+					<div class="card-body">
+					  <h5 class="card-title fw-bold text-center">The Beauty of Forgiveness</h5>
+					  <p class="card-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut 
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+					  </p>
+					  <div class="text-center py-3"> 
+					  <a href="#" class="btn btn-primary">Read More</a>
+					  </div>
+					  <div>
+						<p class="m-0">08-012-2023</p>
+					</div>
+					</div>
+				  </div>
+			</div>
+			<div class="">
+				<div class="card shadow border-0 blog-cards mb-4">
+					<img class="card-img-top" src="assets/images/praying.jpg" alt="Card image" style="width:100%">
+					<div class="card-body">
+					  <h5 class="card-title fw-bold text-center">Connecting With The Divine</h5>
+					  <p class="card-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut 
+						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+					  </p>
+					  <div class="text-center py-3"> 
+					  <a href="#" class="btn btn-primary">Read More</a>
+					  </div>
+					  <div>
+						<p class="m-0">08-012-2023</p>
+					</div>
+					</div>
+				  </div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
+<!--***********************************************blogs-end******************************************-->
+	
+<section class="lets-connect">
+		<div class="container">
+		<div class="row">
+		<h1 class="text-center pb-4">Let's Connect</h1>
+		<div class="d-xl-flex d-lg-flex d-md-flex d-sm-block">
+			<div class="col-xl-6 col-xl-6 col-md-6 col-sm-12">
+				<form class="px-4"> 
+					<div class="d-flex mb-3">
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 me-1">
+					<i class="fas fa-user ms-2 position-absolute">
+					<span class="ps-1 pe-2 text-dark">|</span></i>	
+					<input class="w-100 border-0 shadow px-5 py-3 mb-3 rounded" type="text" id="name" name="name" placeholder="Name" required>
+				    </div>
+
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ms-1">
+					<i class="fas fa-phone ms-2 position-absolute">
+					<span class="ps-1 pe-2 text-dark">|</span></i>
+					<input class="w-100 border-0 shadow px-5 py-3 mb-3 rounded" type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+				    </div>
+					</div>
+
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+						<i class="fas fa-envelope ms-2 position-absolute">
+						<span class="ps-1 pe-2 text-dark">|</span></i>
+						<input class="w-100 border-0 shadow px-5 py-3 mb-3 rounded" type="email" id="email" name="email" placeholder="Email address" required>
+					</div>
+				
+					<div class="col-xl-12 col-lg-12 col-md-12-col-sm-12">
+					<textarea class="w-100 border-0 shadow p-3 rounded" id="message" name="message" placeholder="Write your message here!" rows="4" required></textarea>
+					</div>
+
+				</form>
+				
+			</div>
+			<div class="col-xl-6 col-xl-6 col-md-6 col-sm-12">
+				<img src="assets/images/contactImg.webp" 
+				height="300px"
+				width="500px"
+				alt="contact">
+			</div>
+		</div>	
+	   </div>
+    </div>
+  </section>
+
+<!-----------------------------------------Let's Connect-end------------------------------------->	
+
+	<footer class="footer-content py-5">
+
+		<div class="container">
+			<div class="row">
+
+		<div class="d-xl-flex d-lg-flex d-md-flex d-sm-block pb-3">
+			<div class="col-xl-6 col-xl-6 col-md-6 col-sm-12">
+				<div class="d-flex py-2">
+				   <i class="fas fa-envelope text-white fs-1"></i>
+				   <h2 class="text-white ps-3">Sign Up To Shop Now</h2>
+				</div>
+			</div>
+			<div class="col-xl-6 col-xl-6 col-md-6 col-sm-12">
+				<div class="form-group">
+					<div class="d-flex position-relative">
+						<input class="form-control p-3" 
+							   maxlength="" name="email" 
+							   placeholder="Enter Your Email" 
+							   type="email">
+						<div class="button-primary">
+						<button class="m-2 p-2 btn-footer text-white text-uppercase border-0" 
+							   type="submit">subscribe
+						</button>
+					</div>
+				</div>
+			</div>
+		 </div>
+		 </div>
+
+		</div>	
+		 </div>
+
+	<hr class="custom-hr"> 
+
+	<div class="container">
+	<div class="row">
+
+	 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+		<h4 class="text-white">Contact Us</h4>
+		<address class="text-white">
+			<p class="mb-0">Demo Store</p>
+			<p class="mb-0">Email: <a class="text-white" href="mailto:demo@example.com">demo@example.com</a></p>
+			<p class="mb-0">Phone: +1 123-456-7890</p>
+			<p class="mb-0">123 Main Street, Cityville, Country</p>
+		</address>
+	 </div>
+
+	 <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+		<h4 class="text-white">Information</h4>
+		<ul class="text-white list-unstyled">
+			<li>Privacy Policy</li>
+			<li>Refund Policy</li>
+			<li>Shipping Policy</li>
+			<li>Terms of Service</li>
+			<li>Blogs</li>
+		</ul>
+	 </div>
+
+	 <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+		<h4 class="text-white">Account</h4>
+		<ul class="text-white list-unstyled">
+			<li>Search</li>
+			<li>About Us</li>
+			<li>Faq</li>
+			<li>Contact</li>
+			<li>Help</li>
+		</ul>	
+	 </div>
+
+	 <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+		<h4 class="text-white">Quick Links</h4>
+		<ul class="text-white list-unstyled">
+			<li>Incense Sticks</li>
+			<li>Incense Holder</li>
+		</ul>
+	 </div>
+
+	 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+		<h4 class="text-white">Social Media</h4>
+		<p class="text-white">Follow us on social media and stay updated.</p>
+	 </div>
+	 
+		
+	</div>
+	</div>
+
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+     <!-- Slick Carousel JS -->
+	 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+	$(document).ready(function(){
+        $('.product-carousel').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+				{
+                  breakpoint: 992, // Breakpoint for larger screens
+                   settings: {
+                   slidesToShow: 3,
+               }
+             },
+			 {
+                 breakpoint: 1200,
+                 settings: {
+                 slidesToShow: 4,
+               }
+             }
+            ]
+        });
+    });
+   </script>
+   <script>
+    $(document).ready(function(){
+        $('.blog-carousel').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+			prevArrow: '<button type="button" class="slick-prev"><span class="blog-carousel-arrow"><i class="fas fa-arrow-left py-1"></i></span></button>',
+            nextArrow: '<button type="button" class="slick-next"><span class="blog-carousel-arrow"><i class="fas fa-arrow-right py-1"></i></span></button>',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+						autoplay: true, 
+                        autoplaySpeed: 2000
+                    }
+                }
+            ]
+        });
+    });
+</script>
+		
+</body>
+</html>

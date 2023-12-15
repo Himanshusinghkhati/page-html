@@ -1,0 +1,216 @@
+:root {
+    --primary-color: #fa5c98;
+}
+h1{
+    font-weight: 800;
+}
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+header{
+z-index: 999999;
+background: white;
+top: 0px;
+position: sticky;
+}
+.blog-cards{
+    margin-right: 9px;
+    margin-left: 9px;
+}
+.why-flamingo-list {
+    display: flex;
+    align-items: baseline;
+}
+.why-flamingo-list i {
+    margin-right: 5px;
+    color: var(--primary-color);
+}
+section{
+    padding: 50px 0;
+}
+section.why-pink-flamingo{
+    background: #FFF2F8;
+}
+.search-top-header{
+    border-color: var(--primary-color)!important;
+    border-radius: 5px
+}
+.image-categories-part{
+    margin-right: 20px;
+}
+.image-categories-part img{
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+.user-icon-top{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background: var(--primary-color);
+}
+.user-icon-top i{
+          padding: 8px 11px;
+}
+.hero-slider .carousel-control-prev i{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.hero-slider .carousel-control-prev{
+    opacity: 1;
+}
+.hero-slider .carousel-control-next{
+    opacity: 1;
+}
+.hero-slider .carousel-control-next i{
+    color: var(--primary-color);
+    font-size: 20px;
+    opacity: 1;
+}
+.arrow-sign{
+    height: 30px;
+    width: 30px;
+    padding-top: 5px;
+}
+section.lets-connect i{
+           transform: translateY(90%);
+           font-size: 18px;
+           height: 20px;
+           color: var(--primary-color);
+}
+.deliver-btn{
+    background: var(--primary-color);
+    color: #fff;   
+    min-width: 120px;
+}
+.hero-slider{
+    background: #FFF2F8;   
+}
+.hero-slider-text{
+    font-size: 45px;
+}
+.footer-content{
+    background: var(--primary-color);
+}
+.btn-footer{
+    right: 0%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background: var(--primary-color);
+}
+.custom-hr {
+    opacity: inherit;
+    border: 0;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+.mobile-navbar{
+    display: none;
+}
+.product-list-image-box{
+             border: 2px solid var(--primary-color);
+             border-radius: 10px;
+             margin: 15px 0;
+}
+.product-list-image-box img{
+    border-radius: 10px;
+    max-height: 300px;
+}
+.rating i{
+    color: rgb(255, 255, 7);
+}
+.blog-section .slick-prev, .slick-next {
+    color: var(--primary-color);
+    font-size: 20px; 
+}
+.blog-section .slick-next:hover{
+    color: var(--primary-color);
+}
+.blog-carousel-arrow{
+    height: 30px;
+    width: 30px;
+    display: block;
+    background: #FFF2F8;
+    border-radius: 20px;
+} 
+.product-carousel button.slick-prev.slick-arrow{
+    display: none!important;
+}
+.product-carousel button.slick-next.slick-arrow{
+    display: none!important;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+@media screen and (max-width: 768px) {
+    .image-categories-part img {
+        width: -webkit-fill-available;
+    }
+    .search-top-header{
+        display: none!important;
+    }
+    .cart-box{
+        display: none;
+    }
+    .user-box{
+        display: none;
+    }
+    .hero-slider-text {
+        font-size: 30px;
+    }
+    section.lets-connect img{
+       width: 100%;
+    }
+    .why-pink-img-box{
+        text-align: center!important;
+    }
+    .logo{
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    .mobile-navbar{
+        display: block;
+        top: 20px;
+    }
+    .navbar-desktop{
+        display: none;
+    }
+    .blog-cards{
+        margin-right: 0px;;
+    }
+    .blog-carousel-arrow{
+        display: none;
+    }
+    .dropdown-menu.border-0.shadow.show{
+        position: relative!important;
+        transform: none!important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .dropdown-menu.border-0.shadow.show{
+        position: relative!important;
+        transform: none!important;
+    }
+    .hero-slider-text {
+        font-size: 25px;
+    }
+    section.lets-connect img{
+          width: auto;
+    }
+    .search-top-header{
+        display: none!important;
+    }  
+    .cart-box{
+        display: none; 
+    }
+    .user-box{
+        display: none;
+    }  
+    .mobile-navbar {
+        display: block;
+        top: 10px;
+    }
+}
+
