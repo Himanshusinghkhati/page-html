@@ -144,6 +144,12 @@ section.lets-connect i{
 .navbar-toggler:focus{
     box-shadow: none;
 }
+.blog-read-more{
+    background-color: #fdc2a6;
+}
+.blog-read-more:hover{
+    background-color: var(--primary-color);
+}
 @media screen and (max-width: 768px) {
     .image-categories-part img {
         width: -webkit-fill-available;
